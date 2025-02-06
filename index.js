@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
 app.get('/quiz', (req, res) => {
     console.log('Quiz Data ', quizzes)
-    res.send(quizzes.data);
+    res.send(quizzes);
 });
 
 app.listen(process.env.PORT || PORT, () => {
